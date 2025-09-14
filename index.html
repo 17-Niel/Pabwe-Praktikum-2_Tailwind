@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NielDev - Freelance Web Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="tailwind.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold text-indigo-600">NielDev</h1>
+        <nav>
+          <ul class="flex gap-6 font-medium">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">Tentang</a></li>
+            <li><a href="#services" class="nav-link">Layanan</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#mama muda" class="nav-link">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative h-screen flex items-center justify-center text-white text-center"
+    >
+      <img
+        src="/assets/mantap.png"
+        alt="Background"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 px-6">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 animate-fade">
+          Halo, Saya Niel 👋
+        </h2>
+        <p class="text-xl mb-8">
+          Freelance <span class="font-semibold">Web Developer</span> siap
+          membantu bisnis Anda berkembang secara digital.
+        </p>
+        <a href="#contact" class="btn-primary">Hubungi Saya</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 container mx-auto px-6 text-center">
+      <h3 class="section-title">Tentang Saya</h3>
+      <p class="max-w-2xl mx-auto text-gray-600 mb-10">
+        Saya <span class="font-semibold">Niel </span>, Web Developer freelance
+        dengan pengalaman 3+ tahun. Fokus pada pembuatan website yang sangat
+        profesional modern, cepat, responsif, dan SEO-friendly.
+      </p>
+
+      <!-- Stats -->
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+        <div class="stat-card">
+          <h4 class="text-4xl font-bold text-indigo-600">30+</h4>
+          <p>Projek Selesai</p>
+        </div>
+        <div class="stat-card">
+          <h4 class="text-4xl font-bold text-indigo-600">200+</h4>
+          <p>Klien Puas</p>
+        </div>
+        <div class="stat-card">
+          <h4 class="text-4xl font-bold text-indigo-600">3+</h4>
+          <p>Tahun Pengalaman</p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div>
+          <p class="font-medium text-left mb-2">HTML / CSS</p>
+          <div class="skill-bar"><span class="skill-95"></span></div>
+        </div>
+        <div>
+          <p class="font-medium text-left mb-2">JavaScript</p>
+          <div class="skill-bar"><span class="skill-85"></span></div>
+        </div>
+        <div>
+          <p class="font-medium text-left mb-2">React.js</p>
+          <div class="skill-bar"><span class="skill-80"></span></div>
+        </div>
+        <div>
+          <p class="font-medium text-left mb-2">TailwindCSS</p>
+          <div class="skill-bar"><span class="skill-90"></span></div>
+        </div>
+        <div>
+          <p class="font-medium text-left mb-2">Laravel</p>
+          <div class="skill-bar"><span class="skill-95"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="section-title">Layanan Saya</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="service-card">
+            <div class="icon">💼</div>
+            <h4 class="card-title">Company Profile</h4>
+            <p>Website elegan untuk branding bisnis Anda.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🛒</div>
+            <h4 class="card-title">E-Commerce</h4>
+            <p>Toko online aman, responsif, dan mudah digunakan.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🚀</div>
+            <h4 class="card-title">Landing Page</h4>
+            <p>Halaman promosi modern dengan fokus konversi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20 container mx-auto px-6 text-center">
+      <h3 class="section-title">Portfolio</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="portfolio-card">
+          <img src="/assets/cantik.jpg" alt="Projek 1" />
+          <div class="overlay">
+            <h4>Website Toko Online</h4>
+            <p>E-commerce modern</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="/assets/indah.jpg" alt="Projek 2" />
+          <div class="overlay">
+            <h4>Company Profile Startup</h4>
+            <p>Branding perusahaan</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="/assets/menarik.jpg" alt="Projek 3" />
+          <div class="overlay">
+            <h4>Landing Page Produk</h4>
+            <p>Kampanye marketing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-100 text-center">
+      <div class="container mx-auto px-6">
+        <h3 class="section-title">Testimoni Klien</h3>
+        <div class="testimonial-slider max-w-3xl mx-auto">
+          <div class="testimonial active">
+            <p>"Website saya tampil profesional dan modern!"</p>
+            <span>- Budi, UMKM</span>
+          </div>
+          <div class="testimonial">
+            <p>"Komunikasi mudah, hasil memuaskan. Recommended!"</p>
+            <span>- Michelle, Marketer</span>
+          </div>
+          <div class="testimonial">
+            <p>"Kerja cepat, desain bagus, SEO optimal."</p>
+            <span>- Raka, Startup Founder</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-20 container mx-auto px-6 text-center">
+      <h3 class="section-title">Artikel & Tips</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="blog-card">
+          <img src="https://picsum.photos/400/250?random=4" alt="Blog 1" />
+          <h4>Tips Membuat Website Cepat</h4>
+          <p>Cara optimasi performa website agar lebih cepat diakses.</p>
+        </div>
+        <div class="blog-card">
+          <img src="https://picsum.photos/400/250?random=5" alt="Blog 2" />
+          <h4>UI/UX untuk Pemula</h4>
+          <p>Bagaimana mendesain website yang user-friendly.</p>
+        </div>
+        <div class="blog-card">
+          <img src="https://picsum.photos/400/250?random=6" alt="Blog 3" />
+          <h4>SEO Modern 2025</h4>
+          <p>Strategi SEO terbaru untuk meningkatkan visibilitas bisnis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="mama muda" class="py-20 container mx-auto px-6 text-center">
+      <h3 class="section-title">Kontak Saya</h3>
+      <form
+        class="max-w-lg mx-auto bg-white shadow-lg rounded-xl p-6 space-y-4"
+      >
+        <input type="text" placeholder="Nama Anda" class="input-field" />
+        <input type="email" placeholder="Email Anda" class="input-field" />
+        <textarea
+          placeholder="Pesan Anda"
+          rows="4"
+          class="input-field"
+        ></textarea>
+        <button class="btn-primary w-full">Kirim Pesan</button>
+      </form>
+      <div class="mt-8">
+        <p class="text-lg font-semibold">📧 niel.dev@gmail.com</p>
+        <p class="text-lg font-semibold">📱 0812-3456-7890</p>
+      </div>
+      <div class="mt-8">
+        <iframe
+          src="https://maps.google.com/maps?q=medan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-64 rounded-xl border-0"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-700 text-white text-center py-8">
+      <p>&copy; 2025 NielDev. All rights reserved.</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="#" class="hover:text-gray-300">🌐</a>
+        <a href="#" class="hover:text-gray-300">💼</a>
+        <a href="#" class="hover:text-gray-300">📸</a>
+      </div>
+    </footer>
+
+    <!-- JS Slider -->
+    <script>
+      const testimonials = document.querySelectorAll(".testimonial");
+      let index = 0;
+      setInterval(() => {
+        testimonials[index].classList.remove("active");
+        index = (index + 1) % testimonials.length;
+        testimonials[index].classList.add("active");
+      }, 4000);
+    </script>
+  </body>
+</html>
