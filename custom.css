@@ -124,3 +124,37 @@ html { scroll-behavior: smooth; }
   to { opacity: 1; transform: translateY(0); }
 }
 .animate-fade { animation: fadeIn 1.2s ease-out; }
+
+
+
+/* Layout dasar author */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 10px; /* jarak antara foto & nama */
+}
+
+/* Semua foto bulat */
+.testimonial-author img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc; /* opsional */
+}
+
+/* Ukuran khusus */
+.author-budi {
+  width: 1cm;
+  height: 1cm;
+}
+
+.author-michelle {
+  width: 1.5cm;
+  height: 1.5cm;
+}
+
+.author-raka {
+  width: 1.5cm;
+  height: 1.5cm;
+}
